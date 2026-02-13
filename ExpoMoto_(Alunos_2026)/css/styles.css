@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary: #fa6600;
+  --secondary: #95989a;
+  --text-color: #fff;
+  --text-secondary: #000;
+  --text-tertiary: #5d5d5d;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ***Event form*** */
+#event-subscription {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/moto5.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+  text-align: center;
+}
+
+#disclaimer h2,
+#disclaimer .event-date {
+  color: var(--primary);
+}
+
+#disclaimer h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+#disclaimer .about-event {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+#disclaimer p {
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+#disclaimer .event-date {
+  font-weight: bold;
+}
+
+#subscription-form {
+  background-color: var(--secondary);
+  padding: 2em;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 2em;
+}
+
+#subscription-form p {
+  font-size: 1.2em;
+  color: var(--text-secondary);
+  margin-bottom: 1em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form-group label {
+  color: var(--text-tertiary);
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  background-color: var(--primary);
+  color: var(--text-color);
+  text-transform: uppercase;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 1em;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+
+
+/* 1ª Digitação (Aqui) */
+
+/* Cards */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+#linha-motos h2 {
+  text-align: center;
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  margin: 0 auto;
+  height: 100px;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.card img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+}
+
+.card p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.2em;
+}
+
+/* Endereço */
+
+#endereco {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/hd1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+}
+
+#endereco img {
+  width: 100px;
+}
+
+address {
+  text-align: center;
+  margin: 1rem;
+  line-height: 1.6rem;
+  font-style: normal;
+}
+
+#endereco h1 {
+  color: var(--primary);
+  margin: 2rem;
+}
+
+/* Modelos */
+
+#modelos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+}
+
+.parte1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moto1 {
+  width: 30%;
+  object-fit: cover;
+  flex: 1;
+}
+
+.parte1 h2 {
+  margin-left: 2rem;
+  width: 55%;
+  font-size: 2rem;
+}
+
+.parte2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  flex-direction: row-reverse;
+}
+
+.moto2 {
+  width: 30%;
+  object-fit: cover;
+  flex: 2;
+}
+
+.texto-modelos {
+  flex-direction: column;
+  width: 55%;
+}
+
+.texto-modelos h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.texto-modelos li {
+  line-height: 1.8rem;
+  font-size: large;
+}
+
+/* Inscrição */
+
+#inscricao {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/moto6.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#inscricao h2 {
+  color: var(--text-color);
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.btn-inscricao {
+  background-color: var(--primary);
+  padding: 0.8rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+.btn-inscricao:hover {
+  background-color: #bf4c00;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--secondary);
+  text-align: center;
+  padding: 3rem;
+  line-height: 2.5rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  #event-subscription {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  #disclaimer h2 {
+    font-size: 3em;
+  }
+
+  #disclaimer .about-event {
+    font-size: 2em;
+  }
+
+  
+}
